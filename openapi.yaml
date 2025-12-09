@@ -1,0 +1,101 @@
+openapi: 3.0.4
+info:
+  title: Color Similarity Calculator
+  description: Color Similarity Calculator is a tool for calculating similarity between two colors. It uses multiple algorithms including RGB distance, HSL comparison, and Delta E to provide comprehensive color similarity analysis.
+  termsOfService: https://apiverve.com/terms/
+  contact:
+    name: APIVerve Support
+    email: hello@apiverve.com
+    url: https://apiverve.com/contact
+  version: 1.0.9
+externalDocs:
+  description: Learn more about APIVerve
+  url: https://docs.apiverve.com?utm_source=openapi
+servers:
+- url: https://api.apiverve.com/
+paths:
+  /v1/colorsimilarity:
+    get:
+      summary: Calculate Color Similarity
+      description: Color Similarity Calculator is a tool for calculating similarity between two colors. It uses multiple algorithms including RGB distance, HSL comparison, and Delta E to provide comprehensive color similarity analysis.
+      operationId: colorsimilarity
+      parameters:
+      - name: color1
+        in: query
+        schema:
+          type: string
+        required: true
+        description: 'First hex color value (with or without # prefix)'
+        example: FF5733
+      - name: color2
+        in: query
+        schema:
+          type: string
+        required: true
+        description: 'Second hex color value (with or without # prefix)'
+        example: FF6B47
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: status
+                  error:
+                    type: string
+                    description: error
+                  data:
+                    type: string
+                    description: data
+              example:
+                status: ok
+                error: 
+                data:
+                  color1:
+                    hex: '#FF5733'
+                    rgb:
+                      r: 255
+                      g: 87
+                      b: 51
+                    hsl:
+                      h: 10.6
+                      s: 100
+                      l: 60
+                  color2:
+                    hex: '#FF6B47'
+                    rgb:
+                      r: 255
+                      g: 107
+                      b: 71
+                    hsl:
+                      h: 11.7
+                      s: 100
+                      l: 63.9
+                  rgb_distance: 28.28
+                  rgb_similarity: 93.6
+                  hsl_similarity: 97.71
+                  overall_similarity: 95.65
+                  delta_e: 28.28
+                  hue_difference: 1.15
+                  saturation_difference: 0
+                  lightness_difference: 3.92
+                  similarity_category: nearly identical
+                  are_identical: false
+        '401':
+          description: Your request was not authorized, or your API Key was invalid
+        '404':
+          description: Requested resource was not found
+        '500':
+          description: A server error has occured, try again later
+components:
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-api-key
+      in: header
+security:
+- api_key: []

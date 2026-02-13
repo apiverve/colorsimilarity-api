@@ -1,39 +1,42 @@
 openapi: 3.0.4
 info:
   title: Color Similarity Calculator
-  description: Color Similarity Calculator is a tool for calculating similarity between two colors. It uses multiple algorithms including RGB distance, HSL comparison, and Delta E to provide comprehensive color similarity analysis.
+  description: >-
+    Color Similarity Calculator is a tool for calculating similarity between two
+    colors. It uses multiple algorithms including RGB distance, HSL comparison,
+    and Delta E to provide comprehensive color similarity analysis.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
     email: hello@apiverve.com
     url: https://apiverve.com/contact
-  version: 1.0.9
+  version: 1.0.0
 externalDocs:
   description: Learn more about APIVerve
   url: https://docs.apiverve.com?utm_source=openapi
 servers:
-- url: https://api.apiverve.com/
+  - url: https://api.apiverve.com/
 paths:
   /v1/colorsimilarity:
     get:
       summary: Calculate Color Similarity
-      description: Color Similarity Calculator is a tool for calculating similarity between two colors. It uses multiple algorithms including RGB distance, HSL comparison, and Delta E to provide comprehensive color similarity analysis.
+      description: Calculate similarity between two hex colors
       operationId: colorsimilarity
       parameters:
-      - name: color1
-        in: query
-        schema:
-          type: string
-        required: true
-        description: 'First hex color value (with or without # prefix)'
-        example: FF5733
-      - name: color2
-        in: query
-        schema:
-          type: string
-        required: true
-        description: 'Second hex color value (with or without # prefix)'
-        example: FF6B47
+        - name: color1
+          in: query
+          schema:
+            type: string
+          required: true
+          description: 'First hex color value (with or without # prefix)'
+          example: FF5733
+        - name: color2
+          in: query
+          schema:
+            type: string
+          required: true
+          description: 'Second hex color value (with or without # prefix)'
+          example: FF6B47
       responses:
         '200':
           description: Successful Response
@@ -49,11 +52,11 @@ paths:
                     type: string
                     description: error
                   data:
-                    type: string
+                    type: object
                     description: data
               example:
                 status: ok
-                error: 
+                error: null
                 data:
                   color1:
                     hex: '#FF5733'
@@ -90,7 +93,7 @@ paths:
         '404':
           description: Requested resource was not found
         '500':
-          description: A server error has occured, try again later
+          description: A server error has occurred, try again later
 components:
   securitySchemes:
     api_key:
@@ -98,4 +101,4 @@ components:
       name: x-api-key
       in: header
 security:
-- api_key: []
+  - api_key: []

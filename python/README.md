@@ -44,7 +44,10 @@ from apiverve_colorsimilaritycalculator.apiClient import ColorsimilarityAPIClien
 # Initialize the client with your APIVerve API key
 api = ColorsimilarityAPIClient("[YOUR_API_KEY]")
 
-query = { "color1": "FF5733", "color2": "FF6B47" }
+query = {
+    "color1": "FF5733",
+    "color2": "FF6B47"
+}
 
 try:
     # Make the API call
@@ -82,7 +85,10 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```python
-query = { "color1": "FF5733", "color2": "FF6B47" }
+query = {
+    "color1": "FF5733",
+    "color2": "FF6B47"
+}
 ```
 
 ###### Simple Request
@@ -155,7 +161,10 @@ from apiverve_colorsimilaritycalculator.apiClient import ColorsimilarityAPIClien
 
 api = ColorsimilarityAPIClient("[YOUR_API_KEY]")
 
-query = { "color1": "FF5733", "color2": "FF6B47" }
+query = {
+    "color1": "FF5733",
+    "color2": "FF6B47"
+}
 
 try:
     result = api.execute(query)
@@ -176,7 +185,10 @@ from apiverve_colorsimilaritycalculator.apiClient import ColorsimilarityAPIClien
 
 api = ColorsimilarityAPIClient("[YOUR_API_KEY]")
 
-query = { "color1": "FF5733", "color2": "FF6B47" }
+query = {
+    "color1": "FF5733",
+    "color2": "FF6B47"
+}
 
 try:
     result = api.execute(query)
@@ -210,7 +222,10 @@ The client supports the context manager protocol for automatic resource cleanup:
 ```python
 from apiverve_colorsimilaritycalculator.apiClient import ColorsimilarityAPIClient, ColorsimilarityAPIClientError
 
-query = { "color1": "FF5733", "color2": "FF6B47" }
+query = {
+    "color1": "FF5733",
+    "color2": "FF6B47"
+}
 
 # Using context manager ensures proper cleanup
 with ColorsimilarityAPIClient("[YOUR_API_KEY]") as api:
@@ -236,7 +251,10 @@ from apiverve_colorsimilaritycalculator.apiClient import ColorsimilarityAPIClien
 # Enable debug mode
 api = ColorsimilarityAPIClient("[YOUR_API_KEY]", debug=True)
 
-query = { "color1": "FF5733", "color2": "FF6B47" }
+query = {
+    "color1": "FF5733",
+    "color2": "FF6B47"
+}
 
 # Debug information will be printed to console
 result = api.execute(query)
@@ -251,8 +269,12 @@ from apiverve_colorsimilaritycalculator.apiClient import ColorsimilarityAPIClien
 
 api = ColorsimilarityAPIClient("[YOUR_API_KEY]")
 
+query = {
+    "color1": "FF5733",
+    "color2": "FF6B47"
+}
+
 try:
-    query = { "color1": "FF5733", "color2": "FF6B47" }
     result = api.execute(query)
     print(result)
 finally:

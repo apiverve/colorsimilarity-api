@@ -30,7 +30,12 @@ The Color Similarity Calculator API provides a simple, reliable way to integrate
 ```javascript
 async function callColorSimilarityCalculatorAPI() {
     try {
-        const response = await fetch('https://api.apiverve.com/v1/colorsimilarity', {
+        const params = new URLSearchParams({
+            color1: 'FF5733',
+            color2: 'FF6B47'
+        });
+
+        const response = await fetch(`https://api.apiverve.com/v1/colorsimilarity?${params}`, {
             method: 'GET',
             headers: {
                 'x-api-key': 'YOUR_API_KEY_HERE'
@@ -50,7 +55,7 @@ callColorSimilarityCalculatorAPI();
 ### Using cURL
 
 ```bash
-curl -X GET "https://api.apiverve.com/v1/colorsimilarity?param=value" \
+curl -X GET "https://api.apiverve.com/v1/colorsimilarity?color1=FF5733&color2=FF6B47" \
   -H "x-api-key: YOUR_API_KEY_HERE"
 ```
 
@@ -150,7 +155,7 @@ go get github.com/apiverve/colorsimilarity-api/go
 |---------|---------|
 | **Multi-language SDKs** | Native packages for JavaScript, Python, C#, Go, and Android |
 | **Simple Integration** | Single API key authentication, consistent response format |
-| **Production Ready** | 99.9% uptime, fast response times, used by thousands of developers |
+| **Production Ready** | 99.9% uptime SLA, served from 24 global regions |
 | **Comprehensive Docs** | Full examples, OpenAPI spec, and dedicated support |
 
 ---
@@ -169,7 +174,7 @@ go get github.com/apiverve/colorsimilarity-api/go
 The Color Similarity Calculator API is commonly used for:
 
 - **Web Applications** - Add color similarity calculator features to your frontend or backend
-- **Mobile Apps** - Native SDKs for iOS and Android development
+- **Mobile Apps** - Native SDKs for Android development
 - **Automation** - Integrate with n8n, Zapier, or custom workflows
 - **SaaS Products** - Enhance your product with color similarity calculator capabilities
 - **Data Pipelines** - Process and analyze data at scale

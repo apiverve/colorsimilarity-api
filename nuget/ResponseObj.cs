@@ -25,6 +25,9 @@ namespace APIVerve.API.ColorSimilarityCalculator
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
@@ -36,34 +39,34 @@ namespace APIVerve.API.ColorSimilarityCalculator
         public Color Color2 { get; set; }
 
         [JsonProperty("rgb_distance")]
-        public double RgbDistance { get; set; }
+        public double? RgbDistance { get; set; }
 
         [JsonProperty("rgb_similarity")]
-        public double RgbSimilarity { get; set; }
+        public double? RgbSimilarity { get; set; }
 
         [JsonProperty("hsl_similarity")]
-        public double HslSimilarity { get; set; }
+        public double? HslSimilarity { get; set; }
 
         [JsonProperty("overall_similarity")]
-        public double OverallSimilarity { get; set; }
+        public double? OverallSimilarity { get; set; }
 
         [JsonProperty("delta_e")]
-        public double DeltaE { get; set; }
+        public double? DeltaE { get; set; }
 
         [JsonProperty("hue_difference")]
-        public double HueDifference { get; set; }
+        public double? HueDifference { get; set; }
 
         [JsonProperty("saturation_difference")]
-        public long SaturationDifference { get; set; }
+        public long? SaturationDifference { get; set; }
 
         [JsonProperty("lightness_difference")]
-        public double LightnessDifference { get; set; }
+        public double? LightnessDifference { get; set; }
 
         [JsonProperty("similarity_category")]
         public string SimilarityCategory { get; set; }
 
         [JsonProperty("are_identical")]
-        public bool AreIdentical { get; set; }
+        public bool? AreIdentical { get; set; }
     }
 
     public partial class Color
@@ -81,24 +84,36 @@ namespace APIVerve.API.ColorSimilarityCalculator
     public partial class Hsl
     {
         [JsonProperty("h")]
-        public double H { get; set; }
+        public double? H { get; set; }
 
         [JsonProperty("s")]
-        public long S { get; set; }
+        public long? S { get; set; }
 
         [JsonProperty("l")]
-        public double L { get; set; }
+        public double? L { get; set; }
     }
 
     public partial class Rgb
     {
         [JsonProperty("r")]
-        public long R { get; set; }
+        public long? R { get; set; }
 
         [JsonProperty("g")]
-        public long G { get; set; }
+        public long? G { get; set; }
 
         [JsonProperty("b")]
-        public long B { get; set; }
+        public long? B { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }

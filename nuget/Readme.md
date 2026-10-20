@@ -1,13 +1,12 @@
-ColorSimilarityCalculator API
+Color Similarity Calculator API
 ============
 
-Color Similarity Calculator is a tool for calculating similarity between two colors. It uses multiple algorithms including RGB distance, HSL comparison, and Delta E to provide comprehensive color similarity analysis.
+Color Similarity Calculator measures color similarity between two hex values. It returns an overall similarity score, a categorical match rating, and RGB and HSL channel breakdowns, while paid plans add Delta E and color distance metrics.
 
-![Build Status](https://img.shields.io/badge/build-passing-green)
-![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
-![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 
-This is a .NET Wrapper for the [ColorSimilarityCalculator API](https://apiverve.com/marketplace/colorsimilarity?utm_source=nuget&utm_medium=readme)
+[![NuGet version](https://img.shields.io/nuget/v/APIVerve.API.ColorSimilarityCalculator.svg)](https://www.nuget.org/packages/APIVerve.API.ColorSimilarityCalculator)
+
+This is a .NET wrapper for the [Color Similarity Calculator API](https://apiverve.com/marketplace/colorsimilarity?utm_source=nuget&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -40,8 +39,8 @@ From within Visual Studio:
 
 ## Configuration
 
-Before using the colorsimilarity API client, you have to setup your account and obtain your API Key.
-You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=nuget&utm_medium=readme)
+Before using the Color Similarity Calculator API client, you have to setup your account and obtain your API Key.
+You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=nuget&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -61,9 +60,9 @@ class Program
         var apiClient = new ColorSimilarityCalculatorAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new ColorSimilarityCalculatorQueryOptions {
-    Color1 = "FF5733",
-    Color2 = "FF6B47"
-};
+            Color1 = "FF5733",
+            Color2 = "FF6B47"
+        };
 
         // Make the API call
         try
@@ -93,13 +92,13 @@ class Program
 
 ## Usage
 
-The ColorSimilarityCalculator API documentation is found here: [https://docs.apiverve.com/ref/colorsimilarity](https://docs.apiverve.com/ref/colorsimilarity?utm_source=nuget&utm_medium=readme).
+The Color Similarity Calculator API documentation is found here: [https://docs.apiverve.com/ref/colorsimilarity](https://docs.apiverve.com/ref/colorsimilarity?utm_source=nuget&utm_medium=referral&utm_content=readme).
 You can find parameters, example responses, and status codes documented here.
 
 ### Setup
 
 ###### Authentication
-ColorSimilarityCalculator API uses API Key-based authentication. When you create an instance of the API client, you can pass your API Key as a parameter.
+Color Similarity Calculator API uses API Key-based authentication. When you create an instance of the API client, you can pass your API Key as a parameter.
 
 ```csharp
 // Create an instance of the API client
@@ -126,9 +125,9 @@ public class Example
         var apiClient = new ColorSimilarityCalculatorAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new ColorSimilarityCalculatorQueryOptions {
-    Color1 = "FF5733",
-    Color2 = "FF6B47"
-};
+            Color1 = "FF5733",
+            Color2 = "FF6B47"
+        };
 
         var response = await apiClient.ExecuteAsync(queryOptions);
 
@@ -159,9 +158,9 @@ public class Example
         var apiClient = new ColorSimilarityCalculatorAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new ColorSimilarityCalculatorQueryOptions {
-    Color1 = "FF5733",
-    Color2 = "FF6B47"
-};
+            Color1 = "FF5733",
+            Color2 = "FF6B47"
+        };
 
         var response = apiClient.Execute(queryOptions);
 
@@ -197,9 +196,9 @@ public class Example
         var apiClient = new ColorSimilarityCalculatorAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new ColorSimilarityCalculatorQueryOptions {
-    Color1 = "FF5733",
-    Color2 = "FF6B47"
-};
+            Color1 = "FF5733",
+            Color2 = "FF6B47"
+        };
 
         try
         {
@@ -254,9 +253,9 @@ public class Example
         apiClient.SetRetryDelay(2000);     // Wait 2 seconds between retries
 
         var queryOptions = new ColorSimilarityCalculatorQueryOptions {
-    Color1 = "FF5733",
-    Color2 = "FF6B47"
-};
+            Color1 = "FF5733",
+            Color2 = "FF6B47"
+        };
 
         try
         {
@@ -420,7 +419,7 @@ using (var apiClient = new ColorSimilarityCalculatorAPIClient("[YOUR_API_KEY]"))
 
 ## Customer Support
 
-Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=nuget&utm_medium=readme).
+Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=nuget&utm_medium=referral&utm_content=readme).
 
 ---
 
@@ -431,12 +430,12 @@ Stay up to date by following [@apiverveHQ](https://twitter.com/apiverveHQ) on Tw
 
 ## Legal
 
-All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=nuget&utm_medium=readme) and all legal documents and agreements.
+All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=nuget&utm_medium=referral&utm_content=readme) and all legal documents and agreements.
 
 ---
 
 ## License
-Licensed under the The MIT License (MIT)
+Licensed under the MIT License (MIT)
 
 Copyright (&copy;) 2026 APIVerve, and EvlarSoft LLC
 

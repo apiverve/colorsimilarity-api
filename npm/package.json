@@ -1,7 +1,7 @@
 {
   "name": "@apiverve/colorsimilarity",
-  "version": "1.2.0",
-  "description": "Color Similarity Calculator is a tool for calculating similarity between two colors. It uses multiple algorithms including RGB distance, HSL comparison, and Delta E to provide comprehensive color similarity analysis.",
+  "version": "1.2.2",
+  "description": "Color Similarity Calculator measures color similarity between two hex values. It returns an overall similarity score, a categorical match rating, and RGB and HSL channel breakdowns, while paid plans add Delta E and color distance metrics.",
   "main": "index.js",
   "types": "index.d.ts",
   "sideEffects": false,
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/apiverve/colorsimilarity-api/issues"
   },
-  "homepage": "https://apiverve.com/marketplace/colorsimilarity?utm_source=npm&utm_medium=homepage",
+  "homepage": "https://apiverve.com/marketplace/colorsimilarity?utm_source=npm&utm_medium=referral&utm_content=homepage",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",

@@ -2,9 +2,10 @@ openapi: 3.0.4
 info:
   title: Color Similarity Calculator
   description: >-
-    Color Similarity Calculator is a tool for calculating similarity between two
-    colors. It uses multiple algorithms including RGB distance, HSL comparison,
-    and Delta E to provide comprehensive color similarity analysis.
+    Color Similarity Calculator measures color similarity between two hex
+    values. It returns an overall similarity score, a categorical match rating,
+    and RGB and HSL channel breakdowns, while paid plans add Delta E and color
+    distance metrics.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -19,7 +20,7 @@ servers:
 paths:
   /v1/colorsimilarity:
     get:
-      summary: Calculate Color Similarity
+      summary: Color Similarity Calculator
       description: Calculate similarity between two hex colors
       operationId: colorsimilarity
       parameters:

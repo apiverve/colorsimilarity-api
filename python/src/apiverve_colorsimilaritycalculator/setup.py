@@ -10,14 +10,14 @@ if os.path.exists(requirements_file):
 
 setup(
     name='apiverve_colorsimilaritycalculator',
-    version='1.1.14',
+    version='1.2.2',
     packages=find_packages(),
     include_package_data=True,
     install_requires=install_requires,
-    description='Color Similarity Calculator is a tool for calculating similarity between two colors. It uses multiple algorithms including RGB distance, HSL comparison, and Delta E to provide comprehensive color similarity analysis.',
+    description='Color Similarity Calculator measures color similarity between two hex values. It returns an overall similarity score, a categorical match rating, and RGB and HSL channel breakdowns, while paid plans add Delta E and color distance metrics.',
     author='APIVerve',
     author_email='hello@apiverve.com',
-    url='https://apiverve.com/marketplace/colorsimilarity?utm_source=pypi&utm_medium=homepage',
+    url='https://apiverve.com/marketplace/colorsimilarity?utm_source=pypi&utm_medium=referral&utm_content=homepage',
     classifiers=[
         'Programming Language :: Python :: 3',
         'Operating System :: OS Independent',

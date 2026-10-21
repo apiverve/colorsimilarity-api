@@ -1,6 +1,6 @@
 # Color Similarity Calculator API - PHP Package
 
-Color Similarity Calculator is a tool for calculating similarity between two colors. It uses multiple algorithms including RGB distance, HSL comparison, and Delta E to provide comprehensive color similarity analysis.
+Color Similarity Calculator measures color similarity between two hex values. It returns an overall similarity score, a categorical match rating, and RGB and HSL channel breakdowns, while paid plans add Delta E and color distance metrics.
 
 ## Installation
 
@@ -119,11 +119,11 @@ $client = new Client(
 
 ## Documentation
 
-For more information, visit the [API Documentation](https://docs.apiverve.com/ref/colorsimilarity?utm_source=packagist&utm_medium=readme).
+For more information, visit the [API Documentation](https://docs.apiverve.com/ref/colorsimilarity?utm_source=packagist&utm_medium=referral&utm_content=readme).
 
 ## Support
 
-- Website: [https://apiverve.com/marketplace/colorsimilarity?utm_source=php&utm_medium=readme](https://apiverve.com/marketplace/colorsimilarity?utm_source=php&utm_medium=readme)
+- Website: [https://apiverve.com/marketplace/colorsimilarity?utm_source=php&utm_medium=referral&utm_content=readme](https://apiverve.com/marketplace/colorsimilarity?utm_source=php&utm_medium=referral&utm_content=readme)
 - Email: hello@apiverve.com
 
 ## License

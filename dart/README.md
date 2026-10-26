@@ -1,11 +1,11 @@
 # Color Similarity Calculator API - Dart/Flutter Client
 
-Color Similarity Calculator is a tool for calculating similarity between two colors. It uses multiple algorithms including RGB distance, HSL comparison, and Delta E to provide comprehensive color similarity analysis.
+Color Similarity Calculator measures color similarity between two hex values. It returns an overall similarity score, a categorical match rating, and RGB and HSL channel breakdowns, while paid plans add Delta E and color distance metrics.
 
 [![pub package](https://img.shields.io/pub/v/apiverve_colorsimilarity.svg)](https://pub.dev/packages/apiverve_colorsimilarity)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This is the Dart/Flutter client for the [Color Similarity Calculator API](https://apiverve.com/marketplace/colorsimilarity?utm_source=dart&utm_medium=readme).
+This is the Dart/Flutter client for the [Color Similarity Calculator API](https://apiverve.com/marketplace/colorsimilarity?utm_source=dart&utm_medium=referral&utm_content=readme).
 
 ## Installation
 
@@ -13,7 +13,7 @@ Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  apiverve_colorsimilarity: ^1.1.14
+  apiverve_colorsimilarity: ^1.2.3
 ```
 
 Then run:
@@ -95,12 +95,12 @@ void main() async {
 
 ## API Reference
 
-- **API Home:** [Color Similarity Calculator API](https://apiverve.com/marketplace/colorsimilarity?utm_source=dart&utm_medium=readme)
-- **Documentation:** [docs.apiverve.com/ref/colorsimilarity](https://docs.apiverve.com/ref/colorsimilarity?utm_source=dart&utm_medium=readme)
+- **API Home:** [Color Similarity Calculator API](https://apiverve.com/marketplace/colorsimilarity?utm_source=dart&utm_medium=referral&utm_content=readme)
+- **Documentation:** [docs.apiverve.com/ref/colorsimilarity](https://docs.apiverve.com/ref/colorsimilarity?utm_source=dart&utm_medium=referral&utm_content=readme)
 
 ## Authentication
 
-All requests require an API key. Get yours at [apiverve.com](https://apiverve.com?utm_source=dart&utm_medium=readme).
+All requests require an API key. Get yours at [apiverve.com](https://apiverve.com?utm_source=dart&utm_medium=referral&utm_content=readme).
 
 ## License
 
@@ -108,4 +108,4 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
-Built with Dart for [APIVerve](https://apiverve.com?utm_source=dart&utm_medium=readme)
+Built with Dart for [APIVerve](https://apiverve.com?utm_source=dart&utm_medium=referral&utm_content=readme)

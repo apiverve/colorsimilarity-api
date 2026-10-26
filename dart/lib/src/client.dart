@@ -46,7 +46,7 @@ final _formatPatterns = {
 
 /// Color Similarity Calculator API client.
 ///
-/// For more information, visit: https://apiverve.com/marketplace/colorsimilarity?utm_source=dart&utm_medium=readme
+/// For more information, visit: https://apiverve.com/marketplace/colorsimilarity?utm_source=dart&utm_medium=referral&utm_content=readme
 ///
 /// Parameters:
 /// * [color1] (required) - First hex color value (with or without # prefix) [format: hexColor]

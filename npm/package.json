@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/colorsimilarity",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Color Similarity Calculator measures color similarity between two hex values. It returns an overall similarity score, a categorical match rating, and RGB and HSL channel breakdowns, while paid plans add Delta E and color distance metrics.",
   "main": "index.js",
   "types": "index.d.ts",

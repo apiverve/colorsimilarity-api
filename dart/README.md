@@ -13,7 +13,7 @@ Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  apiverve_colorsimilarity: ^1.2.5
+  apiverve_colorsimilarity: ^1.2.6
 ```
 
 Then run:
